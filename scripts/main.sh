@@ -22,6 +22,11 @@ function install_neovim {
     brew install neovim
 }
 
+function install_astronvim_deps {
+   brew install fd
+   brew install rg
+}
+
 function install_astronvim {
     git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 }
@@ -50,6 +55,8 @@ fi
 echo "Homebrew is installed"
 echo "Installing neovim..."
 install_neovim
+echo "Installing astronvim dependencies..."
+install_astronvim_deps
 echo "Installing astronvim..."
 install_astronvim
 echo "Installing astronvim config..."
