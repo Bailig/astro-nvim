@@ -27,7 +27,7 @@ function install_astronvim {
 }
 
 function install_astronvim_config {
-    git clone --depth 1 git@github.com:Bailig/astronvim-config.git ~/.config/nvim/lua/user
+    git clone --depth 1 https://github.com/Bailig/astronvim-config.git ~/.config/nvim/lua/user
 }
 
 function install_nerd_fonts {
